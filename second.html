@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Event | Dairies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class="conatiner">
+        <div class="start">
+            <!-- navbar -->
+            <nav class="navbar navbar-dark bg-dark justify-content-between">
+                <a class="navbar-brand">Event Tracker</a>
+                <form class="form-inline">
+                    <input type="text" class="form-control mr-sm-1 txtSearch" id="myInput" onkeyup='tableSearch()'
+                        placeholder="Search Names..">
+                </form>
+            </nav>
+
+            <!-- body -->
+            <div class="main mt-5">
+                <div id="userNameMessage" class="welc"></div> 
+                You can Check Your<br><span id="element"><br>Scroll Down
+            </div>
+
+            <!-- Table Starts -->
+            <br>
+            <br>
+            <div class="table-responsive-sm table-striped table-bordered table-sm">
+                <table id="customers" class="table" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th scope="col">Month</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">February</th>
+                            <td>Zakir</td>
+                            <td>3rd February</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">February</th>
+                            <td>Rehan</td>
+                            <td>19th February</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">March</th>
+                            <td>Shahid</td>
+                            <td>27th March</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">April</th>
+                            <td>Ameera</td>
+                            <td>15th April</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">April</th>
+                            <td>Saif</td>
+                            <td>20th April</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">May</th>
+                            <td>Wahida</td>
+                            <td>6th May</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">May</th>
+                            <td>Adnan</td>
+                            <td>14th May</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">May</th>
+                            <td>Shahid &amp; Ishrat</td>
+                            <td>26th May</td>
+                            <td>Anniversary</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">July</th>
+                            <td>Zeba</td>
+                            <td>22nd July</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">August</th>
+                            <td>Zakir &amp; Rukshana</td>
+                            <td>8th August</td>
+                            <td>Anniversary</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">August</th>
+                            <td>Javed &amp; Wahida</td>
+                            <td>10th August</td>
+                            <td>Anniversary</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">September</th>
+                            <td>Rukshana</td>
+                            <td>21st September</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">September</th>
+                            <td>Ishrat</td>
+                            <td>26th September</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">October</th>
+                            <td>Javed</td>
+                            <td>21st October</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">October</th>
+                            <td>Sabrina</td>
+                            <td>30th October</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">December</th>
+                            <td>Safina</td>
+                            <td>17th December</td>
+                            <td>Birthday</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">December</th>
+                            <td>Dada</td>
+                            <td>27th December</td>
+                            <td>Birthday</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Type js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b>Birthday</b>', '&amp; <b>Anniversary.<b>'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-- Search js -->
+    <script type="application/javascript">
+        function tableSearch() {
+            let input, filter, table, tr, td, txtValue;
+
+            //Intialising Variables
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("customers");
+            tr = table.getElementsByTagName("tr");
+
+            for (let i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+        }
+    </script>
+    <br>
+    <!-- Subscription -->
+    <button class="subscribe" onclick="window.location.href='https://calendar.google.com/calendar/u/0?cid=ZjlhMzMxMTgzODBlNTRmMTUwZTg5MDg3MmE3YmUzZjQ4MzQ4YWI2NjhjYjZiMzY1NjIyZGQyZTMyN2U3ZmMxN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'">Add to calendar</button>
+    <br><br>
+    <footer>
+        <p>Design By <b><i>Adnan Shaikh<i><b> &copy; 2023</p>
+    </footer>
+
+    <script>
+        // Function to get the value of the 'name' parameter from the URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Get the 'name' parameter from the URL
+        var userName = getParameterByName('name');
+
+        // Display the user's name on the page
+        var userNameMessage = document.getElementById('userNameMessage');
+        userNameMessage.innerHTML = 'Welcome, ' + userName + '!';
+    </script>
+
+    <style>
+        .shb{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+</body>
+
+</html>
